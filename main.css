@@ -1,0 +1,23 @@
+@keyframes move{
+    from{
+        top:150px;
+        left:20px
+    }
+    to{
+        top:30px;
+        left: 400px;
+    }
+    to{
+        top: 500px;
+        right: 300px;
+    }
+
+}
+.animation{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    animation: move 5s ease-in-out 0s infinite normal backwards;
+
+}
