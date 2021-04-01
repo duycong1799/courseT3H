@@ -51,27 +51,27 @@
 
 //Bai 9
 
-let randomNum = prompt('Nhap so bat ki');
-let rever = '';
-let checkSymmetrical = function (randomNum) {
-    let check;
-    for (let i = randomNum.length - 1; i >= 0; --i) {
+// let randomNum = prompt('Nhap so bat ki');
+// let rever = '';
+// let checkSymmetrical = function (randomNum) {
+//     let check;
+//     for (let i = randomNum.length - 1; i >= 0; --i) {
 
-        rever += randomNum[i];
-    }
-    console.log(rever);
+//         rever += randomNum[i];
+//     }
+//     console.log(rever);
 
-    if (randomNum == rever) {
-        check = 'La so dao nguoc';
+//     if (randomNum == rever) {
+//         check = 'La so dao nguoc';
         
 
-    } else {
-        check = 'Khong phai La so dao nguoc';
-    }    
-    return check;
-};
+//     } else {
+//         check = 'Khong phai La so dao nguoc';
+//     }    
+//     return check;
+// };
 
-console.log(checkSymmetrical(randomNum));
+// console.log(checkSymmetrical(randomNum));
 
 // Bai 10
 
@@ -144,4 +144,78 @@ console.log(checkSymmetrical(randomNum));
 //     return myString;
 // };
 // console.log(reverse(input));
+
+ //De quy
+//  let total = function(input){
+//     return 
+//  }
+
+//  console.log('Total 1-n : ',total(10) );
+
+
+//Bai 14
+
+// let s1 = "This is a beautiful day";
+// let s2 = "is"
+
+// let check = function(s1,s2){
+//     return s1.match(s2);
+// };
+
+// console.log(check(s1,s2));
+
+//Bai 16
+
+// let link = "https://www.facebook.com/ngothucdat";
+
+// function getName(link) {
+//     for (let i = 0; i < link.length; i++) {
+//         if (link.slice(0, i) === "https://www.facebook.com/") {
+//             link = link.slice(i);
+//         }
+//     }
+//     return link;
+// }
+
+// console.log(getName(link));
+
+//Bai17
+
+// function getMax(a, b, c) {
+//     let max = a;
+
+//     if (b > max) {
+//         max = b;
+//     } else if (c > max) {
+//         max = c;
+//     }
+
+//     return max;
+// }
+
+// function getMin(a, b, c) {
+//     let min = a;
+
+//     if (b < min) {
+//         min = b;
+//     } else if (c < min) {
+//         min = c;
+//     }
+
+//     return min;
+// }
+
+// console.log(getMax(3, 5, 2));
+// console.log(getMin(3, 5, 2)); 
+
+//Bai 19
+
+// let n = 10;
+// function getTotal(n) {
+//     if (n === 0) {
+//         return 0;
+//     }
+//     return n + getTotal(n - 1);
+// }
+// console.log(getTotal(n)); 
 
