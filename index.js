@@ -219,3 +219,162 @@
 // }
 // console.log(getTotal(n)); 
 
+// let point =[5,6,7,8,10];
+//  let checkPoint = point.indexOf(10);
+//  console.log(checkPoint);
+
+//  let students = [
+//      {
+//          name:"Cong",
+//          mark:0
+//      },
+//      {
+//         name:"Manh Buoi",
+//         mark:1
+//     },
+//     {
+//         name:"Thai",
+//         mark:2
+//     }
+//  ]
+
+// let JSStudent = [
+// {
+//     name:"Le Minh",
+//     mark:9
+// },
+// {
+//     name:"Vo Minh",
+//     mark:10
+// },
+// {
+//     name:"Tuan Hai",
+//     mark:11
+// },
+// {
+//     name:"Nguyen Van A",
+//     mark:12
+// },
+// {
+//     name:"Nguyen Van A",
+//     mark:12
+// }
+// ];
+// let student10MArks = 
+// let check = JSStudent.filter()
+
+
+//Bai 21 -> Done
+// var arr = [1,2,3,4,5,6,7,8,9,9,8,7,6,5,4,3,2,1] ;
+// var output = function(thamso){
+//     total = 0;
+//     for(var i=0; i<arr.length;i++){
+//         total+=arr[i];
+//     }
+//     return total;
+// }
+// console.log('Day la ket qua : '+output(arr));
+
+//Bai 22 -> Done
+// var arr = [1,2,3,4,5,6,7,8,9,9,8,7,6,5,4,3,2,1];
+// var numberMax = function(thamso){
+//     var numMax = arr[0];
+//     for(var i=1;i<arr.length;i++){
+//         if(arr[i]>numMax){
+//             numMax = arr[i];
+//         }
+//     }
+//     return numMax;
+// } 
+// var numberMin = function(thamso){
+//     var numMin = arr[0];
+//     for(var i=1;i<arr.length;i++){
+//         if(arr[i]<numMin){
+//             numMin = arr[i];
+//         }
+//     }
+//     return numMin;
+// }
+// var average = function(numberMax,numberMin){
+//     var tb = (numberMax+numberMin)/2;
+//     return tb;
+// } 
+// console.log('Max : ' + numberMax(arr));
+// console.log('Min : ' + numberMin(arr));
+// console.log('Average : ' + average(numberMax(arr),numberMin(arr)));
+//Bai 23 -> Done
+// var arr = [1,2,3,4,5,6,7,8,9,9,9,8,7,6,5,4,3,2,1] 
+// var checkTimesappear = function(arr){
+//     var count = 0;
+//     var Max=2;    
+//     for(var i=0;i<arr.length;i++){
+//         for(var j=i;j<arr.length;j++){
+//             if(arr[i]==arr[j])
+//             count++;
+//         }
+//         if(count>Max){
+//             var getValue = arr[i];
+//         }
+//         count = 0;
+//     }
+//     return getValue;
+
+// }
+// console.log('So co so lan xuat hien nhieu nhat : '+ checkTimesappear(arr));
+
+//Bai 24 -> Done
+// var a = [1,2,3,2,3,4,6,7];
+// var b = [];
+// function checkPrime(num){
+//     var check = true;
+//     if (num < 2) {
+//         check = false;
+//     } else {
+//         for (let i = 2; i <= Math.sqrt(num); i++) {
+//             if (num % i == 0) {
+//                 check = false;
+//                 break;
+//             }
+//         }
+//     }
+//     if(check==true){
+//         return num;
+//     }
+// }
+// var check = a.filter(function(item){
+//     return checkPrime(item);
+// });
+// console.log(check)
+
+//Bai 25 -> Done
+// var a = [1,2,3,2,3,4,6,7];
+// var b = [];
+// for(let i=0;i<a.length;i++){
+//     let tmp = a[i]*a[i];
+//     b.push(tmp);
+//     // console.log(b);
+// }
+// console.log(b);
+
+//Bai 28
+// students = [
+//     {
+//         id: "T3HXX1",
+//         firstName: "NgAN",
+//         lastName: "Duong Thuy"
+//     },
+//     {
+//         id: "T3HXX2",
+//         firstName: "Ha",
+//         lastName: "Do Thi Thu"
+//     },
+//     {
+//         id: "T3HXX5",
+//         firstName: "Minh",
+//         lastName: "Nguyen Nhat"
+//     }
+// ]
+// let studentDo = students.filter(function(student) {
+//     return student.lastName.split(' ')[0].indexOf('Do') != -1;    
+// })
+// console.log('học sinh có họ Do: ', studentDo);
