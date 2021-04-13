@@ -378,3 +378,127 @@
 //     return student.lastName.split(' ')[0].indexOf('Do') != -1;    
 // })
 // console.log('học sinh có họ Do: ', studentDo);
+
+
+//map, reduce, sort, concat
+
+// Vi du map : tra ve 1 mang 
+let students =[
+    {
+        firstName: 'Nguyen Van ',
+        lastName : 'A',
+        mark:'9'
+    },
+    {
+        firstName: 'Nguyen Thi',
+        lastName : 'B',
+        mark:'9'
+    },
+    {
+        firstName: 'Nguyen Van ',
+        lastName : 'C',
+        mark:'9'
+    }
+
+];
+// in mot danh sach voi fullname
+// let studentFullName = students.map((student)=>{
+//     return `${student.firstName} ${student.lastName}`
+// });
+// console.log(studentFullName);
+// in mot danh sach day du thuoc tinh va them attribute fullName
+// let studentFullName = students.map((student)=>{
+//     student.fullName = `${student.firstName} ${student.lastName}`;
+//     return student
+// });
+// console.log(studentFullName);
+
+// Vi du reduce 
+//reduce(item,index,arr)
+// let numbers  = [1,2,3,4,6];
+
+//a = 0 : gia tri khoi tao bang 0
+//b = 1 : gia tri tiep theo 
+// a moi = a + b = 1
+// b = 2
+//neu khong co gia tri khoi tao thi se nhan phan tu dau lam gia tri kho tao
+// let totalOdd = numbers.reduce((a,b,index)=>{
+//     if(b%2!=0){
+//         return a+b;
+//     }else if(b%2==0){
+//         return a;
+//     }
+// },0);
+// console.log(totalOdd);
+
+//sort : Sap xep
+
+let numbers  = [1,22,3,44,6];
+
+// let sortNumbers = numbers.sort();
+
+// let sortNumbers = numbers.sort((number1,number2)=>{
+//     return number1-number2;
+// });
+// console.log(sortNumbers);
+
+//sort students
+
+students.push({
+    firstName: "tran thi",
+    lastName: "D",
+    mark:5
+});
+// console.log(students)
+// let sortMarkStudent = numbers.sort((student1,student2)=>{
+//     if(student1.mark > student2.mark){
+//         return 1;
+//     }else if(student1.mark < student2.mark){
+//         return -1;
+//     }else{
+//         0;
+//     }
+// });
+// console.log(sortMarkStudent);
+
+
+// let sortFirstNameStudent = students.sort((student1,student2)=>{
+//     return student1.firstName.localeCompare(student2.firstName) ;
+
+// });
+// console.log(sortFirstNameStudent);
+
+// let sortLengthFirstNameStudent = students.sort((student1,student2)=>{
+//     return student2.firstName.length - student1.firstName.length;
+
+// });
+// console.log(sortLengthFirstNameStudent);
+
+//concat
+console.log(numbers.concat(students)) // noi 2 mang
+
+// Object - property, method (OOP)
+let car = {
+    name: 'Fiat',
+    color:'white',
+    weigth:850,
+    start:function(){
+        console.log(`${this.name} Starting`);
+    }
+}
+console.log(car.name) ; // lay gia tri thuoc tinh name
+console.log(car["name"]) ; // lay gia tri thuoc tinh name
+
+function getValueByProperty(prop){
+    console.log("prop: ", prop);
+    return car[prop];
+}
+console.log(getValueByProperty("name"))
+console.log(getValueByProperty("color"))
+
+car.model = "2020"; // them property model va gan gia tri
+console.log(car);
+
+let start = car.start.bind(car);
+car.start();
+start();
